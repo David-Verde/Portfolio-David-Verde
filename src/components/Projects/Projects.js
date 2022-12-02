@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import space from "../../Assets/Projects/Space-Tavel.jpeg";
+import air from "../../Assets/Projects/Air-Pollution.jpeg";
+import home from "../../Assets/Projects/Home-Sharing.png";
+import book from "../../Assets/Projects/bookstore.png";
+import streamy from "../../Assets/Projects/Streamy.jpeg";
 
 function Projects() {
   return (
@@ -23,70 +22,60 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={home}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Home Sharing"
+              description="The Home Sharing App is a fully responsive app that provides the service for connecting homeowners wanting to rent their properties and potential clients, enabling the creation of reservations for periods of time on selected properties. The backend is loaded on render so you need to wait at least 1min before the back end loads."
+              ghLink="https://github.com/Home-Sharing-Team"
+              demoLink="https://home-sharing.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={streamy}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Streamy App"
+              description="This is a TV show catalog application built using the TvMaze API, created using technologies such as React, Redux, Redux-Thunk, React-Router, Axios and Sass."
+              ghLink="https://github.com/David-Verde/microverse-js-Pair-capstone"
+              demoLink="https://keen-panda-183542.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={air}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Latin America's Air Pollution"
+              description="Building a Latin America Pollution Metrics application using React and Redux. The project was created using an API to fetch data from the Country Pullution and the data is displayed in a table and a chart, used technologies such as React & Redux, Css, and JavaScript ."
+              ghLink="https://github.com/David-Verde/Latin-America-Pollution-Metrics-Webbapp"
+              demoLink="https://62e1913b89672a1fdf8720cd--dulcet-concha-673dcd.netlify.app/#/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={space}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Space X"
+              description="In this project we created a space x web page to reserve missions and rockets from the space X API, technologies used are HTML/CSS, ReactJs,Redux, ES6, Node.js, ESLint, StyleLint."
+              ghLink="https://62d9bc18ce037a18b651fb18--wonderful-vacherin-bfde52.netlify.app"
+              demoLink="https://62d9bc18ce037a18b651fb18--wonderful-vacherin-bfde52.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={book}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Bookstore"
+              description="In this project it was required to build a very simple BookStore application using React and Redux. The project was split into multiple milestones, and each milestone had functional and technical requirements that was implemented, you can add books and follow the progress during chapters."
+              ghLink="https://github.com/David-Verde/Bookstore"
+              demoLink="https://638a233e8c00a536f33cbcf6--radiant-liger-45569c.netlify.app"
+              
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
