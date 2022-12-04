@@ -25,7 +25,7 @@ function Projects() {
               imgPath={home}
               isBlog={false}
               title="Home Sharing"
-              description="The Home Sharing App is a fully responsive app that provides the service for connecting homeowners wanting to rent their properties and potential clients, enabling the creation of reservations for periods of time on selected properties. The backend is loaded on render so you need to wait at least 1min before the back end loads."
+              description="The Home Sharing App is a fully responsive app that provides the service for connecting homeowners wanting to rent their properties and potential clients, enabling the creation of reservations for periods of time on selected properties. The backend is loaded on Render-Hosting so you need to wait at least 1min before the back end loads."
               ghLink="https://github.com/Home-Sharing-Team"
               demoLink="https://home-sharing.netlify.app"
             />
